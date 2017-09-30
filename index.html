@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial=scale=1.0">
+    <title>My Favorite Image</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <header>
+                <h1>Bookmark Your Image</h1>
+                <p>Add the URL of your favorite image below to add it to the database. <span>For accessibility, please also provide a title for the image and some alt text.</span></p>
+            </header>
+            <main>
+                <p id="required">All fields are required</p>
+                <form action="photo.php" method="post">
+                    <p>
+                        <label for="url">URL of image:</label>
+                        <input type="url" name="url" id="url" required>
+                    </p>
+                    <p>
+                        <label for="title">Title of image:</label>
+                        <input type="text" name="title" id="title" required>
+                    </p>
+                    <p>
+                        <label for="alt">Alternate (alt) text:</label>
+                        <input type="text" name="alt" id="alt" required>
+                    </p>
+                    <p>
+                        <input type="submit" name="submit" id="submit" value="Add my page info">
+                    </p>
+                </form>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
